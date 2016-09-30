@@ -1,0 +1,32 @@
+{
+  "name": "herokuloancalc",
+  "version": "1.0.0",
+  "description": "my first app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --watch scss --o ./css",
+    "serve": "lite-server",
+    "dev": "concurrently --kill-others \"npm run build-css\" \"npm run serve\"",
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingeniousofme80/loancalc.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "me",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ingeniousofme80/loancalc/issues"
+  },
+  "homepage": "https://github.com/ingeniousofme80/loancalc#readme",
+  "devDependencies": {
+    "concurrently": "^3.0.0",
+    "lite-server": "^2.2.2",
+    "liteserver": "^0.3.0",
+    "node-sass": "^3.10.0"
+  }
+}
